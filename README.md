@@ -8,8 +8,8 @@ Retrofit
 JUnit\
 Coroutines\
 Architectural components\
-Jetpack navigation component\
+Jetpack navigation component
 
 ## Developer keys
-Stored in gradle.properties
+Stored in gradle.properties\
 Private key stored in local.properties - shouldn't be pushed up to cloud
