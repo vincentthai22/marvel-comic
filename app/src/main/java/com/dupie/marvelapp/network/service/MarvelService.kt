@@ -13,6 +13,6 @@ interface MarvelService {
     suspend fun fetchComics(): ComicResponseDTO
 
     @GET("/v1/public/comics/{id}")
-    suspend fun fetchComic(@Path("id") comicId: String): Call<Response>
+    suspend fun fetchComic(@Path("id") comicId: Int): ComicResponseDTO
 
 }

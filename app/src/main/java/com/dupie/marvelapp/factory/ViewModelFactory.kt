@@ -5,6 +5,7 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.viewmodel.CreationExtras
 import com.dupie.marvelapp.data.MarvelRepository
+import com.dupie.marvelapp.ui.detail.MarvelDetailViewModel
 import com.dupie.marvelapp.ui.list.MarvelListViewModel
 
 class ViewModelFactory(
@@ -16,6 +17,10 @@ class ViewModelFactory(
 
         if(modelClass == MarvelListViewModel::class.java) {
             return MarvelListViewModel(app, repository) as T
+        }
+
+        if(modelClass == MarvelDetailViewModel::class.java) {
+            return MarvelDetailViewModel(app, repository) as T
         }
 
         return super.create(modelClass)

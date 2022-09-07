@@ -4,6 +4,7 @@ data class ComicDTO(
     val id: Int,
     val title: String,
     val description: String?,
-    val thumbnail: ThumbnailDTO
+    val thumbnail: ThumbnailDTO,
+    val image: List<ThumbnailDTO>?
 ) {
 }

@@ -4,7 +4,9 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.5239583333333333" />
+        <entry key="app/src/main/res/layout/fragment_marvel_detail.xml" value="0.19429347826086957" />
         <entry key="app/src/main/res/layout/fragment_marvel_list.xml" value="0.525" />
+        <entry key="app/src/main/res/layout/list_item_marvel.xml" value="0.2548125633232016" />
       </map>
     </option>
   </component>

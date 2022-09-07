@@ -7,11 +7,19 @@
     <fragment
         android:id="@+id/detailFragment"
         android:name="com.dupie.marvelapp.ui.detail.MarvelDetailFragment"
-        />
+        >
+        <argument android:name="comicId"
+            app:argType="integer"/>
+
+    </fragment>
 
     <fragment
         android:id="@+id/listFragment"
-        android:name="com.dupie.marvelapp.ui.list.MarvelListFragment"
-        />
+        android:name="com.dupie.marvelapp.ui.list.MarvelListFragment">
+
+        <action android:id="@+id/action_navigate_to_detail"
+            app:destination="@id/detailFragment" />
+
+    </fragment>
 
 </navigation>
